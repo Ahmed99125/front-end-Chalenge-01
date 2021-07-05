@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px
+}
+
+.body {
+  background-color: hsl(0, 0%, 98%);
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.head-container {
+  width: 100%;
+  max-width: 750px;
+  height: 400px;
+  padding: 40px 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.head-container h1 {
+  font-weight: 200;
+  font-size: 31px;
+  text-align: center;
+  font-size: 40px;
+}
+
+.head-container h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: hsl(234, 12%, 34%);
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+
+.head-container p {
+  text-align: center;
+  color: hsl(229, 6%, 66%);
+  font-size: 20px;
+}
+
+.main {
+  width: 100%;
+  padding: 80px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  width: 100%;
+  max-width: 1000px;
+  justify-content: center;
+  align-items: center;
+}
+
+#Team-Builder {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row: 1 / span 2;
+  border-top: 6px solid hsl(0, 78%, 62%);
+}
+
+#Calculator {
+  grid-row: 2 / span 2;
+  grid-column-start: 3;
+  border-top: 6px solid hsl(212, 86%, 64%);
+}
+
+#Supervisor {
+  grid-row: 2 / span 2;
+  border-top: 6px solid hsl(180, 62%, 55%);
+}
+
+#Karma {
+  grid-column-start: 2;
+  grid-row: 3 / span 2;
+  border-top: 6px solid hsl(34, 97%, 64%);
+}
+
+.card {
+  width: 400px;
+  height: 300px;
+  background-color: #fff;
+  margin: 20px;
+  padding: 30px;
+  border-radius: 8px;
+  outline: none;
+  box-shadow: 0px 1px 15px -5px gray;
+  position: relative;
+}
+
+.card h1 {
+  font-size: 25px;
+  color: hsl(234, 12%, 34%);
+  margin-bottom: 8px;
+}
+
+.card p {
+  color: hsl(229, 6%, 66%);
+}
+
+.card .img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin: 0 30px 30px 0;
+}
